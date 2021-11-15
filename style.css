@@ -1,0 +1,383 @@
+/* Variables Start */
+
+:root {
+  --body-bg: rgb(7, 7, 7);
+  --block-bg: rgb(19, 19, 19);
+  --content-bg: rgb(28, 28, 28);
+  --text-color: rgb(179, 179, 179);
+  --text-color-2: rgb(81, 80, 80);
+  --brand-color: rgb(1, 190, 112);
+  --text-size: 1rem;
+  --head-text-s: 1.5rem;
+}
+
+/* Variables End  */
+
+
+/* Global CSS Start */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-size: var(--text-size);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+body {
+  overflow-x: hidden;
+  background-color: var(--body-bg);
+  /* overflow: none !important; */
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  transition: all 300ms ease-in;
+}
+
+a:hover {
+  color: var(--brand-color) !important;
+}
+a:hover > i {
+  color: var(--brand-color) !important;
+}
+
+.active {
+  color: var(--brand-color) !important;
+}
+
+.f-width {
+  width: 100vw !important;
+}
+
+img {
+  overflow: none;
+}
+
+/* Global CSS End */
+
+/* Header Part CSS Start */
+.nav-container {
+  background-color: rgb(1, 6, 6);
+  background: rgb(1, 6, 6);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  top: 0;
+  z-index: 10px;
+}
+
+/* Logo CSS */
+
+.logo-container {
+  width: 700px;
+}
+.logo-img {
+  width: 120px;
+}
+
+/* scroll btn css */
+
+
+/* scroll top */
+.scrolltop{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+
+.scroll-top{
+  visibility: visible;
+}
+
+.scrolltop .scrolltop__icon{
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: var(--brand-color);
+  margin: 30px;
+  border-radius: 20px 10px 2px 10px;
+  animation: animate_scroll infinite 1.5s;
+}
+@keyframes animate_scroll {
+  0%, 20%, 50%, 80%, 100%{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(10px);
+  }
+  60%{
+    transform: translateY(8px);
+  }
+}
+
+/* nav-item CSS */
+
+.nav-item-container {
+  width: 400px;
+  display: inline-block;
+  position: relative;
+}
+.nav-item-container ul {
+  list-style-type: none;
+}
+.nav-item-container ul li {
+  display: inline-block;
+  width: 90px;
+  position: relative;
+}
+/* drop down Css */
+.nav-item-container ul li ul {
+  position: absolute;
+  background: var(--block-bg);
+  padding: 5px 15px;
+  border-radius: 5px;
+  width: 18vw;
+  margin-top: -1000px;
+}
+
+.nav-item-container ul li:hover > ul{
+  margin-top: 5px;
+  margin-left: -20px;
+}
+.nav-item-container ul li ul li {
+  width: 100% !important;
+  line-height: 1.8;
+  
+}
+/* .nav-container ul li ul li a:h{} */
+
+
+.menu-icon img{
+  width: 50px;
+  height: 50px;
+  display: none;
+  cursor: pointer;
+}
+
+.cross-icon img{
+  width:20px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+}
+
+.ms{
+  margin-left: 33px;
+}
+
+/* Main Part CSS Start */
+.container section {
+  margin: 0 auto;
+  background-color: var(--block-bg);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 30px 0;
+  overflow:hidden;
+  margin-top: 120px;
+}
+
+.head-part {
+  padding: 15px;
+  margin: -8px;
+  margin-bottom: 12px;
+  text-align: center;
+  background-color: var(--content-bg);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-part img{
+  width: 110px;
+  height: 38px;
+  margin-right: 20px;
+}
+
+.head-part h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px){
+  .head-part h2{
+    font-size: 1.5rem;
+  }
+  .header section{
+    margin: 0 10px;
+    margin-right: 27px;
+    margin-top: 20px;
+  }
+  .header section .content-container{
+   display: block;
+  }
+
+  .container section {
+    margin-top: 100px;
+  }
+}
+.content-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.content-ast {
+  background-color: var(--block-bg) !important;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 0.4;
+}
+
+.content-ast h3 {
+  text-align: left;
+  padding-bottom: 15px;
+  font-size: 1.5rem;
+  padding-left:5px;
+}
+.content-ast div {
+  background-color: var(--content-bg);
+  padding: 15px;
+  border-radius: 5px;
+}
+.content-ast ol {
+  padding-left: 10px;
+}
+.content-ast ol li {
+  line-height: 1.6;
+}
+
+/* Talk about project CSS Start */
+.talk-about .content-container {
+  justify-content: center;
+  align-items: center;
+}
+.talk-about .content-ast {
+  flex: 0.2;
+}
+.talk-about .content-ast h3 {
+  text-align: left;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.t-social i:hover {
+	color: var(--brand-color);
+	transition: all 300ms ease-in;
+}
+
+
+.t-social i {
+	font-size: 2rem;
+	width: 60px;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.talk-about .head-part {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+@media screen and (max-width: 768px){
+  .talk-about .head-part .social-btns{
+    display: flex;
+    align-items: center;
+  }
+  .talk-about .content-ast {
+  flex: 1;
+}
+  .talk-about .head-part{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .talk-about .head-part h2{
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .social-btns{
+margin: 0 auto;
+    height: 26px;
+  }
+  .talk-about section{
+    overflow: hidden;
+    margin: 0 auto !important;;
+  }
+    .talk-about{
+    width: 92vw;
+    margin: 20px auto;
+  }
+  
+}
+
+/* pricing model Css Start */
+.price-model .content-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  margin: 30px;
+}
+@media screen and (max-width: 768px) {
+  .price-model .content-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .price-model{
+    margin: 0 auto;
+    width: 90vw;
+    overflow: hidden;
+  }
+  .t-content .t-row > span:first-child{
+    width: 25vw;
+  }
+  .content-container .content-ast:nth-child(3) .t-header {
+    align-items: center;
+  }
+ .price-model .content-container .content-ast:nth-child(3) span{
+    margin: 5px;
+    font-size: .8rem;
+  }
+  .price-model .content-container .content-ast:nth-child(3){
+    overflow: hidden;
+    padding: 30px 0;
+  }
+}
+.price-model .content-container .content-ast {
+  background-color: var(--content-bg) !important;
+  margin: 20px;
+}
+.t-header {
+  /* background-color: rgb(80, 80, 80) !important; */
+  border-bottom: 1px solid var(--brand-color);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.t-header span {
+  color: var(--brand-color);
+  display: block;
+}
+.t-content .t-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .......  */
+/* .......  */
