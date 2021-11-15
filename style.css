@@ -193,7 +193,7 @@ header{
 }
 
 .head-part {
-  padding: 15px;
+  padding: 10px;
   margin: -8px;
   margin-bottom: 12px;
   text-align: center;
@@ -206,9 +206,9 @@ header{
 }
 
 .head-part img{
-  width: 110px;
-  height: 38px;
-  margin-right: 20px;
+  width: 150px;
+  height: 100px;
+  margin-right: 10px;
 }
 
 .head-part h2 {
