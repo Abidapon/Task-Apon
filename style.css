@@ -313,7 +313,7 @@ header{
     margin-bottom: 10px;
   }
   .social-btns{
-margin: 0 auto;
+  margin: 0 auto;
     height: 26px;
   }
   .talk-about section{
@@ -378,6 +378,9 @@ margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.text-c h3{
+  text-align: center;
 }
 /* .......  */
 /* .......  */
